@@ -1,0 +1,113 @@
+<div class="adminHeader d-flex mb-4 p-0">
+  <h1 class="fz24 mr-48 fw-bold">Admin</h1>
+  <!-- Add New Admin modal -->
+  <a href="#" type="button" class="btn me-auto text-dark d-flex gap8" data-bs-toggle="modal" data-bs-target="#ModalNewAdmin">
+      <span class="material-symbols-outlined icon text-success d-flex align-items-center">
+          add
+      </span>
+      <span>Add New Admin</span>
+  </a>
+  
+  <!-- Add New Admin Modal -->
+  <div class="modal fade mt-2" id="ModalNewAdmin" tabindex="-1" aria-labelledby="ModalNewAdmin" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header p-5">
+          <h5 class="modal-title fw-bold fz24" id="exampleModalLabel">New Admin</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body addAdminBody">
+          <div class="account border-bottom mb-4 pb-4">
+              <div class="mb-3">
+                  <h5 class="fw-bold mb-3 fz20">Account</h5>
+                  <label for="name" class="form-label fz14 mb-1">Name</label>
+                  <input type="name" class="form-control p-3" id="exampleFormControlInput1" placeholder="Emir Wicks">
+              </div>
+              <div class="mb-3">
+              <label for="email" class="form-label fz14 mb-1">Email</label>
+              <input type="email" class="form-control p-3" id="exampleFormControlInput1" placeholder="emir.wicks@mail.com">
+              </div>
+          </div>
+          
+          <div class="verification border-bottom mb-4 pb-4">
+              <div class="mb-3">
+                  <h5 class="fw-bold mb-3 mb-3 fz20">Verification</h5>  
+                  <label for="name" class="form-label d-flex w-100 mb-18 align-items-center">
+                      <span class="material-symbols-outlined mr-10 text-danger">warning</span>
+                      <span class="fw-bold">Unverified</span></label>
+                      
+                  <div class="sendMail text-center text-secondary fw-bold border p-3">Send Verification Mail</div>
+              </div>
+          </div>       
+  
+          <div class="accessLevel border-bottom mb-4 pb-4">
+              <div class="mb-3">
+                  <h5 class="fw-bold mb-3 fz20">Access Level</h5>
+                  <select class="bg-white p-3 w-100 border text-secondary">
+                  <option value="">-Choose access level-</option>
+                  <option value="">Admin</option>
+                  <option value="">Assistant</option>
+                  <option value="">User</option>
+                  </select>              
+              </div>
+          </div>          
+          
+          <div class="customAccess mb-4 pb-4">
+              <div class="mb-3">
+                  <h5 class="fw-bold mb-3 fz20">Custom Access</h5>
+                          
+                  <div class="form-check mb-3">
+                      <input class="form-check-input border border-dark" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckDefault">
+                      Lecture
+                      </label>
+                  </div>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input border border-dark" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      Coupon
+                      </label>
+                  </div>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input border border-dark" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      Message
+                      </label>
+                  </div>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input border border-dark" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      Setting
+                      </label>
+                  </div>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input border border-dark" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      Task Menu
+                      </label>
+                  </div>
+          </div>           
+              
+          </div>    
+      
+          </div>
+          <div class="modal-footer d-flex">
+          <button type="button" class="btn addAdminButton text-success border-success mr-15 pt-8 p-lr-32" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn addAdminButton text-light bg-success border-success pt-8 p-lr-32">Add</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <ul class="d-flex">
+      <li><span class="material-symbols-outlined navIcon">
+          search
+          </span>
+      </li>
+      <li><span class="material-symbols-outlined">
+          notifications_active
+          </span>
+      </li>
+  </ul>
+
+</div>

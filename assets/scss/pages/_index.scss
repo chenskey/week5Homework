@@ -1,0 +1,32 @@
+.content {
+  padding: 32px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.hwContent {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.navIcon {
+  margin-right: 26px;
+}
+
+.cardList {
+  li:hover {
+    background: $gray-300;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
